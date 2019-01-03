@@ -4,7 +4,7 @@ Useful for QHD or HiDPI monitors, or when you just don't want to squint
 anymore.
 
 Set the default zoom level in the preferences for this add-on. If unset,
-the add-on will default to 133%.
+the add-on will default to 100%.
 
 Per-site zoom levels are respected, with one exception. See below.
 

@@ -1,4 +1,4 @@
-let defaultZoom = 1.33;
+let defaultZoom = 1;
 
 let gettingDefaultZoom = browser.storage.local.get("defaultZoom");
 gettingDefaultZoom.then((storage) => {
