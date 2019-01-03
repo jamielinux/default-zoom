@@ -22,7 +22,7 @@
 
   "content_scripts": [
     {
-      "matches": [""http", "https", "ftp", "ftps", "file"],
+      "matches": ["http", "https", "ftp", "ftps", "file"],
       "js": ["content.js"],
       "run_at": "document_start"
     }
