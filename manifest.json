@@ -1,0 +1,41 @@
+{
+  "manifest_version": 2,
+  "name": "Default Zoom",
+  "short_name": "Default Zoom",
+  "version": "1.0.0",
+  "description": "Set default zoom level for Firefox.",
+  "homepage_url": "https://github.com/jamielinux/default-zoom",
+  "developer": {
+    "name": "Jamie Nguyen",
+    "url": "https://jamielinux.com"
+  },
+
+  "permissions": [
+    "storage"
+  ],
+
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+
+  "options_ui": {
+    "page": "preferences.html"
+  },
+
+  "applications": {
+    "gecko": {
+      "id": "default-zoom@jamielinux.com",
+      "strict_min_version": "52.0"
+    }
+  }
+}
