@@ -11,6 +11,7 @@
   },
 
   "permissions": [
+    "webNavigation",
     "storage"
   ],
 
@@ -19,14 +20,6 @@
       "background.js"
     ]
   },
-
-  "content_scripts": [
-    {
-      "matches": ["http://*/*", "https://*/*", "ftp://*/*", "file://*/*"],
-      "js": ["content.js"],
-      "run_at": "document_start"
-    }
-  ],
 
   "options_ui": {
     "page": "preferences.html"

@@ -26,5 +26,5 @@ browser.tabs.onCreated.addListener((details) => {
   browser.tabs.setZoom(details.id, parseFloat(defaultZoom));
 });
 
-browser.runtime.onMessage.addListener(setZoom);
 browser.tabs.onActivated.addListener(setZoom);
+browser.webNavigation.onDOMContentLoaded.addListener(setZoom);
