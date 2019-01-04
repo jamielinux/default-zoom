@@ -27,4 +27,6 @@ browser.tabs.onCreated.addListener((details) => {
 });
 
 browser.tabs.onActivated.addListener(setZoom);
+browser.webNavigation.onCommitted.addListener(setZoom);
 browser.webNavigation.onDOMContentLoaded.addListener(setZoom);
+browser.webNavigation.onCompleted.addListener(setZoom);
