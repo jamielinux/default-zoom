@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Default Zoom",
   "short_name": "Default Zoom",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Set default zoom level for Firefox.",
   "homepage_url": "https://github.com/jamielinux/default-zoom",
   "developer": {
