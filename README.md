@@ -20,14 +20,12 @@ permissions](https://github.com/jamielinux/default-zoom/blob/master/manifest.jso
 
 ## Per-site zoom levels
 
-**All per-site zoom levels are respected, with one exception: a zoom level of
-100% is always overridden when reloading a page.** That might not be an issue
-for you though if 100% zoom is always too small anyway!
-
-Other add-ons use browser storage to keep per-site zoom level entries for every
-website you visit. This add-on avoids doing that, while still respecting
-per-site zoom levels, by only zooming the page when the zoom level is 100% (ie,
-a new tab).
+**Per-site zoom levels are respected, with one exception: a zoom level of 100%
+is always overridden after you reload.** (Reason: There's a limitation in the
+WebExtension API. Other add-ons solve that by storing per-site zoom level
+entries for every website you visit. This add-on avoids that by only zooming
+when the zoom of the current tab is 100%, which is fine because 100% was too
+small for you anyway!)
 
 ## Why is this add-on even necessary?
 
