@@ -24,12 +24,12 @@ permissions](https://github.com/jamielinux/default-zoom/blob/master/manifest.jso
 100% is always overridden when reloading a page.** That might not be an issue
 for you though if 100% zoom is always too small anyway!
 
-Other add-ons use browser storage to keep per-site zoom level entries for
-every website you visit. This extension avoids doing that, while still
-respecting per-site zoom levels, by only zooming the page when the zoom level
-is 100% (ie, a new tab).
+Other add-ons use browser storage to keep per-site zoom level entries for every
+website you visit. This add-on avoids doing that, while still respecting
+per-site zoom levels, by only zooming the page when the zoom level is 100% (ie,
+a new tab).
 
-## Why is this extension even necessary?
+## Why is this add-on even necessary?
 
 You can't easily set the default zoom level for new tabs in Firefox. There are
 four options:
