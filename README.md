@@ -11,7 +11,7 @@ you don't like squinting.
 
 Other zoom add-ons have more features and might suit you better.
 
-This add-on makes some trade-offs to be as tiny as possible. It's [just 30
+This add-on makes some trade-offs to be **as tiny as possible**. It's [just 30
 lines of
 JavaScript](https://github.com/jamielinux/default-zoom/blob/master/background.js).
 It doesn't use browser storage other than a single option for the default zoom
