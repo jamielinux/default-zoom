@@ -1,7 +1,8 @@
 # Default Zoom extension for Firefox
 
-Set the default zoom level for Firefox. Useful for QHD or HiDPI monitors, or if
-you don't like squinting.
+Set the [default zoom level for
+Firefox](https://addons.mozilla.org/en-US/firefox/addon/default-zoom/). Useful
+for QHD or HiDPI monitors, or if you don't like squinting.
 
 * Set your desired default zoom level. If unset, the add-on will default to
   100%.
