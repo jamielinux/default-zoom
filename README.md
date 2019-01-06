@@ -15,8 +15,8 @@ This add-on makes some trade-offs to be **as tiny as possible**. It's [just 30
 lines of
 JavaScript](https://github.com/jamielinux/default-zoom/blob/master/background.js)
 (whereas others are 1000s of lines). It doesn't use browser storage other than
-a single option for the default zoom level. It [requests minimal
-permissions](https://github.com/jamielinux/default-zoom/blob/master/manifest.json#L13-L15).
+a single option for the default zoom level. It [requests almost no
+permissions](https://github.com/jamielinux/default-zoom/blob/master/manifest.json#L10-L12).
 
 ## Per-site zoom levels
 
