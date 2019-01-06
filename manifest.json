@@ -11,7 +11,6 @@
   },
 
   "permissions": [
-    "webNavigation",
     "storage"
   ],
 
