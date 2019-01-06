@@ -4,11 +4,8 @@
   "short_name": "Default Zoom",
   "version": "1.0.6",
   "description": "Set default zoom level for Firefox.",
+  "author": "Jamie Nguyen",
   "homepage_url": "https://github.com/jamielinux/default-zoom",
-  "developer": {
-    "name": "Jamie Nguyen",
-    "url": "https://jamielinux.com"
-  },
 
   "permissions": [
     "storage"
