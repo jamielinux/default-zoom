@@ -3,16 +3,15 @@ let defaultZoom = 1;
 let gettingDefaultZoom = browser.storage.local.get("defaultZoom");
 gettingDefaultZoom.then((storage) => {
   if (storage.defaultZoom) {
-    // Start of temporary migration as we've changed the units of the setting.
     let parsedZoom = parseFloat(storage.defaultZoom);
-    if (0.3 <= parsedZoom && parsedZoom <= 3) {
-      defaultZoom = parsedZoom;
-      browser.storage.local.set({
-        defaultZoom: parsedZoom * 100
-      });
-    // End of temporary migration.
-    } else {
+    if (30 <= parsedZoom && parsedZoom <= 300) {
       defaultZoom = parseFloat(storage.defaultZoom) / 100;
+    } else {
+      // If the setting is somehow outside the allowed range of
+      // values, set it back to the default.
+      browser.storage.local.set({
+        defaultZoom: "100"
+      });
     }
   }
 });
