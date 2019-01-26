@@ -5,7 +5,7 @@ gettingDefaultZoom.then((storage) => {
   if (storage.defaultZoom) {
     let parsedZoom = parseFloat(storage.defaultZoom);
     if (30 <= parsedZoom && parsedZoom <= 300) {
-      defaultZoom = parseFloat(storage.defaultZoom) / 100;
+      defaultZoom = parsedZoom / 100;
     } else {
       // If the setting is somehow outside the allowed range of
       // values, set it back to the default.
