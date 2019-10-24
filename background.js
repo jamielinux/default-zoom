@@ -32,7 +32,7 @@ browser.storage.onChanged.addListener((newSettings) => {
 });
 
 browser.tabs.onCreated.addListener((tab) => {
-  browser.tabs.setZoom(tab.id, defaultZoom);
+  setZoom(tab.id, {status:1}, tab);         
 });
 
 browser.tabs.onUpdated.addListener(setZoom);
