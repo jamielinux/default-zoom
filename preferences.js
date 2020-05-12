@@ -6,18 +6,20 @@ const defaultZoom = 100;
 function saveOptions(e) {
   e.preventDefault();
   browser.storage.local.set({
-    defaultZoom: document.querySelector("#default-zoom").value
+    defaultZoom: document.querySelector("#default-zoom").value,
   });
 }
 
 function restoreOptions() {
   function setCurrentChoice(result) {
-    document.querySelector("#default-zoom").value = result.defaultZoom || defaultZoom;
+    document.querySelector("#default-zoom").value =
+      result.defaultZoom || defaultZoom;
   }
   function onError(error) {
+    // eslint-disable-next-line no-console
     console.log(`Error: ${error}`);
   }
-  var getDefaultZoom = browser.storage.local.get("defaultZoom");
+  const getDefaultZoom = browser.storage.local.get("defaultZoom");
   getDefaultZoom.then(setCurrentChoice, onError);
 }
 
